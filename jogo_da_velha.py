@@ -8,7 +8,8 @@ P1 = "X"  # Jogador 1
 P2 = "O"  # Jogador 2 ou computador
 
 
-# Limpa a tela do terminal (funciona fora da IDE). Em IDEs como PyCharm, pode não funcionar.
+# Limpa a tela do terminal (funciona fora da IDE).
+# Em IDEs como PyCharm, pode não funcionar.
 def limpar_tela():
     os.system("cls" if os.name == "nt" else "clear")
 
@@ -143,7 +144,7 @@ def obter_jogada(simbolo):
             else:
                 print("Já ocupado!\n")
         else:
-            print("⚠️ Entrada inválida! Digite uma coordenada como A1, B2, etc")
+            print("⚠️ Entrada inválida! Digite uma coordenada como A1, B2")
 
 
 # Define jogada do computador de forma aleatória entre casas disponíveis
