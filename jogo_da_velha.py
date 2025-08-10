@@ -147,7 +147,7 @@ def obter_jogada(simbolo):
             print("⚠️ Entrada inválida! Digite uma coordenada como A1, B2")
 
 
-# Define jogada do computador de forma aleatória entre casas disponíveis
+# Define a jogada do computador: escolhe aleatoriamente uma coordenada e repete até encontrar uma casa livre
 def computador():
     """Escolhe uma coordenada livre para o computador.
 
