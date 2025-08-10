@@ -6,7 +6,7 @@ Um clássico jogo da velha (tic-tac-toe) jogável no terminal, com visual retrô
 
 ## 🧠 Funcionalidades
 
-- Modo 2 jogadores (local)  
+- Modo de 2 jogadores (local)
 - Modo contra IA (nível fácil)  
 - Interface em texto limpa e nostálgica  
 - Marcação com coordenadas tipo `A1`, `B3`...
