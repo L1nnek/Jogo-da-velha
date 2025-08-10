@@ -149,11 +149,20 @@ def obter_jogada(simbolo):
 
 # Define jogada do computador de forma aleatória entre casas disponíveis
 def computador():
-    while True:
-        escolha = random.choice(coordenadas_validas)
-        if verificar_vaga(escolha):
-            registrar_jogada(escolha, P2)
-            return
+    """Escolhe uma coordenada livre para o computador.
+
+    A implementação anterior escolhia coordenadas aleatórias de toda a lista
+    ``coordenadas_validas`` até encontrar uma casa vazia. Quando o tabuleiro
+    estava cheio, esse loop poderia se tornar infinito. Agora filtramos as
+    coordenadas disponíveis antes de escolher, evitando loops desnecessários e
+    garantindo que a função termine mesmo em cenários imprevistos.
+    """
+
+    escolhas_disponiveis = [c for c in coordenadas_validas if verificar_vaga(c)]
+    if not escolhas_disponiveis:
+        return  # Nenhuma jogada possível
+    escolha = random.choice(escolhas_disponiveis)
+    registrar_jogada(escolha, P2)
 
 
 # Jogo entre dois jogadores humanos
