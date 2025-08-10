@@ -33,7 +33,7 @@ def mostrar_tabuleiro():
 # Reseta o tabuleiro, preenchendo tudo com espaços
 def reiniciar_tabuleiro():
     for linha in range(len(tabuleiro)):
-        for coluna in range(len(tabuleiro)):
+        for coluna in range(len(tabuleiro[linha])):
             tabuleiro[linha][coluna] = " "
 
 
