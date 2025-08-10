@@ -70,12 +70,3 @@ A IA está em modo **fácil**, escolhendo posições aleatórias disponíveis. �
 Feito com carinho (e umas boas linhas de código 💻) por **Línnek**.
 
 ---
-
-## ✨ Ideias futuras
-
-- Adicionar placar de vitórias  
-- Melhorar IA com dificuldade média/difícil  
-- Modo multiplayer online?
-
----
-
